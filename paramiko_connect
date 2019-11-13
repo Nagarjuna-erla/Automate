@@ -1,0 +1,6 @@
+import paramiko
+x=paramiko.SSHClient()
+x.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+x.connect(username="yamini",hostname="192.168.11.134",password="yamu")
+a,b,c=x.exec_command("ls -l")
+print(b.read())
