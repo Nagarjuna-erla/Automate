@@ -1,2 +1,2 @@
 #!/usr/bin/python
-Prinf("hi")
+Print("hi")
